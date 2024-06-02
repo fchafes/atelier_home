@@ -1,0 +1,55 @@
+.home-about {
+  width: 100%;
+  z-index: 10;
+  padding: 15vh 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-about .staff-pic {
+  margin-bottom: 9em;
+}
+
+.home-about .staff-pic img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.home-about .staff-pic#about-1 {
+  width: 150px;
+}
+
+.home-about .staff-pic#about-2 {
+  width: 200px;
+  height: 200px;
+  align-self: flex-end;
+}
+
+.home-about .staff-pic#about-3 {
+  width: 170px;
+  margin-bottom: 5em;
+}
+
+.home-about .staff-pic#about-4 {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 5em;
+  align-self: flex-end;
+}
+
+.home-about .staff-pic#about-5 {
+  width: 150px;
+  margin-bottom: 3em;
+}
+
+.home-about .staff-pic#about-6 {
+  width: 200px;
+  margin-bottom: 6em;
+  align-self: flex-end;
+}
+
+.home-about .staff-pic#about-7 {
+  width: 150px;
+  margin-bottom: 3em;
+}

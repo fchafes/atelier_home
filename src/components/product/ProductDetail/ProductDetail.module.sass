@@ -1,0 +1,67 @@
+.ProductDetail
+    color: $color-ddl
+    .DetailImageBox
+        width: 100%
+        height: 300px
+        position: relative
+        margin-top: 0.5em
+        margin-bottom: 0.8em
+    img
+        object-fit: cover
+    .ImageNav
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 0.8em
+        .DotBox
+            display: flex
+            .Dot
+                width: 10px
+                height: 10px
+                border-radius: 50%
+                border: 1px solid $color-ddl
+                margin-right: 7px
+            .Dot:first-child
+                background-color: $color-ddl
+        .ArrowBox
+            display: flex
+            justify-content: flex-end
+            button
+                border: none
+                background-color: transparent
+                p
+                    font-size: 1.4em
+                    color: $color-ddl
+            button:first-child
+                rotate: 90deg
+                margin-right: 40px
+            button:last-child
+                rotate: -90deg
+                margin-right: 6px
+    .TextHeader
+        display: flex
+        justify-content: space-between
+        margin-bottom: 0.8em
+        h1
+            font-family: "Libre Caslon Text", serif
+            font-size: 1em
+    .TextBody
+        margin-bottom: 1.5em
+    .AddToCart
+        margin-bottom: 5em
+        form
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
+            .InputBox :first-child
+                margin-bottom: 0.3em
+            .InputBox input
+                margin-right: 0.7em
+            .FormButton
+                border: 1px solid $color-ddl
+                padding: 0 8px
+                height: 35px
+                background-color: $color-ddl
+                p
+                    font-size: 1em
+                    color: $color-crema
