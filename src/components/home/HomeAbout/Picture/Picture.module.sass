@@ -1,6 +1,7 @@
 .Picture
   margin-bottom: 9em
   position: relative
+  transition: transform 0.5s ease
   img
     object-fit: cover
 
@@ -39,3 +40,6 @@
     width: 150px
     height: 220px
     margin-bottom: 3em
+
+  &.move-up
+    transform: translateY(-100px)

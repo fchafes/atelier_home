@@ -1,1 +1,0 @@
-export { TiendaNav } from "./TiendaNav";

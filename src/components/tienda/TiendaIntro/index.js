@@ -1,1 +1,0 @@
-export { TiendaIntro } from "./TiendaIntro";

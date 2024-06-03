@@ -17,14 +17,14 @@ export const MobileMenu = ({ openMenu, toggleMenu }) => {
           </Link>
         </li>
         <li>
-          <Link href="/carrito" onClick={toggleMenu}>
-            Carrito
-          </Link>
-        </li>
-        <li>
           <Link href="/contacto" onClick={toggleMenu}>
             Contacto
           </Link>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/ateliercasadepan" target="_blank" onClick={toggleMenu}>
+            Instagram
+          </a>
         </li>
         <li>
           <p className="happy-face">:)</p>

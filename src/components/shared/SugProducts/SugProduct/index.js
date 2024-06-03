@@ -1,1 +1,0 @@
-export { SugProduct } from "./SugProduct";
