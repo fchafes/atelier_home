@@ -31,3 +31,18 @@ h3 {
 h3 {
   margin-bottom: 1em;
 }
+
+@media (min-width: 701px) {
+  p,
+  h3 {
+    font-size: 1em;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+  }
+}

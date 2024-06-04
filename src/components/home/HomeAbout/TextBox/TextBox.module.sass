@@ -2,11 +2,29 @@
   text-align: end
   width: 70%
   align-self: flex-end
-  margin-bottom: 3em
+  margin-bottom: -20em
   color: $color-ddl
+  z-index: 2
 
 .SecondTextBox
   text-align: start
   width: 70%
   align-self: flex-start
-  margin-bottom: 6em
+  margin-bottom: 8em
+
+/* Tablet and Desktop */
+@media (min-width: 701px)
+  .TextBox
+    text-align: end
+    width: 35%
+    align-self: flex-end
+    margin-right: 4em
+    margin-bottom: -35em
+    color: $color-ddl
+
+  .SecondTextBox
+    text-align: start
+    width: 35%
+    align-self: flex-start
+    margin-bottom: 10em
+    margin-left: 5em

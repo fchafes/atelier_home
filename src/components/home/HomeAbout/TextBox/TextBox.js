@@ -1,16 +1,33 @@
-import styles from "./TextBox.module.sass";
+"use client";
 
-export const TextBox = ({ id }) => {
+import styles from "./TextBox.module.sass";
+import { useState, useEffect } from "react";
+
+export const TextBox = ({ id, speed }) => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const classNames =
     id === "second-text-box"
       ? `${styles.TextBox} ${styles.SecondTextBox}`
       : styles.TextBox;
 
   return (
-    <div className={classNames}>
+    <div
+      className={classNames}
+      style={{ transform: `translateY(${scrollY * speed}px)` }}
+    >
       {id === "first-text-box" ? (
         <>
-          <h3>SOBRE ATELIER</h3>
           <p>
             Atelier es una panadería artesanal, creada en 2017 en Montevideo.
             <br />

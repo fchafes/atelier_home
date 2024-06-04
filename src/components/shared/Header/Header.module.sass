@@ -6,8 +6,51 @@
   padding: 1em
   position: fixed
   z-index: 100
+  .desktopNav
+    display: none
+    mix-blend-mode: difference
+    ul
+      display: flex
+      gap: 1em
+      list-style: none
+      font-size: 0.7em
+      a
+        transition: color 1s ease
+      a:hover
+        font-family: "Libre Caslon Text", serif
+        font-size: 1em
   .burgerBox :first-child
     margin-right: 12px
     margin-bottom: 2px
+  .burgerBox
+    .burger
+      transition: color 1s ease
+  .EmptyCart
+    transition: color 1s ease
   .logoLink
     margin-left: auto
+    svg
+      transition: color 1s ease
+
+/* Tablet and Desktop */
+@media (min-width: 701px)
+  .Header
+    padding: 1em 2em
+    align-items: center
+    .desktopNav
+      display: block
+      ul
+        height: 13px
+        li
+          &:nth-child(1)
+            width: 40px
+
+          &:nth-child(2)
+            width: 49px
+
+          &:nth-child(3)
+            width: 72px
+    .burgerBox
+      display: none
+    .EmptyCart
+      display: none

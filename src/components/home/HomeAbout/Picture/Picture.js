@@ -2,41 +2,40 @@
 
 import styles from "./Picture.module.sass";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
+import picturesData from "../picturesData";
 
-export const Picture = ({ id, path }) => {
-  const additionalClass = id ? styles[id] : "";
-
-  const elementRef = useRef(null);
+export const Picture = ({ id, speed }) => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    const options = {
-      threshold: 0.5, // Cuando la mitad del componente está en el viewport
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 700);
     };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          console.log("Entering viewport", entry.target);
-          // Si el componente entra en el viewport, aplica la clase 'move-up'
-          elementRef.current.classList.add(styles.moveUp);
-        } else {
-          console.log("Exiting viewport", entry.target);
-          // Si el componente sale del viewport, remueve la clase 'move-up'
-          elementRef.current.classList.remove(styles.moveUp);
-        }
-      });
-    }, options);
-
-    observer.observe(elementRef.current);
-
-    return () => observer.disconnect();
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    handleResize();
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
+  const image = picturesData.find((img) => img.id === id);
+  const imageUrl = isSmallScreen ? image.urlSmall : image.urlLarge;
+  const additionalClass = id ? styles[id] : "";
+
   return (
-    <div className={`${styles.Picture} ${additionalClass}`} ref={elementRef}>
+    <div
+      className={`${styles.Picture} ${additionalClass}`}
+      style={{ transform: `translateY(${scrollY * speed}px)` }}
+    >
       <Image
-        src={path}
+        src={imageUrl}
         alt="Foto de Atelier y su equipo"
         fill={true}
         quality={100}

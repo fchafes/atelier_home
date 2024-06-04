@@ -8,13 +8,48 @@
   align-items: center;
 }
 
-.home-intro h1 {
-  text-align: center;
-  margin-bottom: 0.8em;
-}
-
-.home-intro h2 {
-  text-decoration: underline;
+.home-intro a {
   margin-bottom: 4em;
   margin-top: 10vh;
+}
+
+.home-intro .title-container {
+  position: relative;
+}
+
+.home-intro .title-container h1 {
+  text-align: center;
+}
+
+.home-intro .title-container .arrow-down {
+  position: absolute;
+  left: 43%;
+  bottom: -3em;
+  animation: moveDownFadeIn 1.6s ease-out infinite;
+}
+
+@keyframes moveDownFadeIn {
+  0% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+  94% {
+    transform: translateY(18px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(18px);
+    opacity: 0.3;
+  }
+}
+
+/* Tablet and Desktop */
+@media (min-width: 701px) {
+  .home-intro h1 {
+    margin-bottom: 0em;
+    font-size: 0.9em;
+  }
+  .home-intro p {
+    font-size: 0.8em;
+  }
 }

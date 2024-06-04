@@ -7,15 +7,16 @@ export const HomeAbout = () => {
   return (
     <>
       <section className="home-about">
-        <Picture id="about-1" path="/images/home/about_1.webp" />
-        <Picture id="about-2" path="/images/home/about_2.webp" />
-        <Picture id="about-3" path="/images/home/about_3.webp" />
-        <TextBox id="first-text-box" />
-        <Picture id="about-4" path="/images/home/about_4.webp" />
-        <Picture id="about-5" path="/images/home/about_5.webp" />
-        <TextBox id="second-text-box" />
-        <Picture id="about-6" path="/images/home/about_6.webp" />
-        <Picture id="about-7" path="/images/home/about_7.webp" />
+        <Picture id="about-1" speed={-0.1} />
+        <Picture id="about-2" speed={0.3} />
+        <h3 className="about-title">SOBRE ATELIER</h3>
+        <Picture id="about-3" speed={0} />
+        <TextBox id="first-text-box" speed={-0.01} />
+        <Picture id="about-4" speed={0.2} />
+        <Picture id="about-5" speed={0} />
+        <TextBox id="second-text-box" speed={-0.1} />
+        <Picture id="about-6" speed={-0.05} />
+        <Picture id="about-7" speed={0} />
       </section>
       <Footer />
     </>

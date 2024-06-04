@@ -1,34 +1,37 @@
 .Picture
   margin-bottom: 9em
   position: relative
-  transition: transform 0.5s ease
+  transition: transform ease-out
   img
     object-fit: cover
 
   &.about-1
     width: 150px
     height: 220px
+    margin-bottom: 0
 
   &.about-2
     width: 200px
     height: 200px
     align-self: flex-end
+    margin-bottom: 30em
+    margin-top: -5em
 
   &.about-3
     width: 170px
     height: 240px
-    margin-bottom: 5em
+    margin-bottom: 6em
 
   &.about-4
     width: 200px
     height: 200px
-    margin-bottom: 5em
+    margin-bottom: 38em
     align-self: flex-end
 
   &.about-5
     width: 150px
     height: 200px
-    margin-bottom: 3em
+    margin-bottom: 16em
 
   &.about-6
     width: 220px
@@ -41,5 +44,48 @@
     height: 220px
     margin-bottom: 3em
 
-  &.move-up
-    transform: translateY(-100px)
+/* Tablet and Desktop */
+@media (min-width: 701px)
+  .Picture
+    &.about-1
+      width: 420px
+      height: 570px
+      margin-left: 5em
+
+    &.about-2
+      width: 450px
+      height: 450px
+      align-self: flex-end
+      margin-right: 2em
+      margin-bottom: 35em
+
+    &.about-3
+      width: 380px
+      height: 570px
+      margin-left: 12em
+
+    &.about-4
+      width: 400px
+      height: 400px
+      align-self: flex-end
+      margin-right: 4em
+      margin-bottom: 55em
+
+    &.about-5
+      width: 400px
+      height: 540px
+      margin-bottom: 25em
+      margin-left: 5em
+
+    &.about-6
+      width: 450px
+      height: 340px
+      margin-bottom: 6em
+      margin-right: 10em
+      align-self: flex-end
+
+    &.about-7
+      width: 400px
+      height: 560px
+      margin-bottom: 3em
+      margin-left: 5em

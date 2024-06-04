@@ -6,6 +6,10 @@
   flex-direction: column;
 }
 
+.home-about .about-title {
+  color: #a33434;
+}
+
 .home-about .staff-pic {
   margin-bottom: 9em;
 }
@@ -52,4 +56,16 @@
 .home-about .staff-pic#about-7 {
   width: 150px;
   margin-bottom: 3em;
+}
+
+/* Tablet and Desktop */
+@media (min-width: 701px) {
+  .home-about {
+    padding: 15vh 2em;
+  }
+  .home-about .about-title {
+    margin-bottom: 1em;
+    margin-left: 12em;
+    color: #a33434;
+  }
 }
