@@ -8,7 +8,7 @@ export const MobileMenu = ({ openMenu, toggleMenu }) => {
       <ul>
         <li>
           <Link href="/" onClick={toggleMenu}>
-            Home
+            Inicio
           </Link>
         </li>
         <li>
@@ -22,7 +22,11 @@ export const MobileMenu = ({ openMenu, toggleMenu }) => {
           </Link>
         </li>
         <li>
-          <a href="https://www.instagram.com/ateliercasadepan" target="_blank" onClick={toggleMenu}>
+          <a
+            href="https://www.instagram.com/ateliercasadepan"
+            target="_blank"
+            onClick={toggleMenu}
+          >
             Instagram
           </a>
         </li>

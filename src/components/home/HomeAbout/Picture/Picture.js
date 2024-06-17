@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import picturesData from "../picturesData";
 
-export const Picture = ({ id, speed }) => {
+export const Picture = ({ id, speed, unoptimized }) => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
 
@@ -39,6 +39,7 @@ export const Picture = ({ id, speed }) => {
         alt="Foto de Atelier y su equipo"
         fill={true}
         quality={100}
+        unoptimized={unoptimized}
       />
     </div>
   );
