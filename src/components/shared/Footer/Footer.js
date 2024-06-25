@@ -14,11 +14,23 @@ export const Footer = () => {
       </address>
       <span className="footer-face">:)</span>
       <ul className="footer-nav">
-        <li><Link href="/tienda">Tienda</Link></li>
+        <li>
+          <Link href="https://tienda.atelier.com.uy/">Tienda</Link>
+        </li>
         <li>/</li>
-        <li><a href="https://www.instagram.com/tu-pagina" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li>
+          <a
+            href="https://www.instagram.com/ateliercasadepan/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+        </li>
         <li>/</li>
-        <li><a href="mailto:tu-email@ejemplo.com">Mail</a></li>
+        <li>
+          <a href="mailto:ateliercasadepan@gmail.com">Mail</a>
+        </li>
       </ul>
     </footer>
   );

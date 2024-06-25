@@ -9,7 +9,7 @@ const LibreCaslon = Libre_Caslon_Text({
 });
 
 const GoodSans = localFont({
-  src: "../../public/fonts/Good-Sans-Regular.ttf",
+  src: "../../public/fonts/good-sans-regular.ttf",
   display: "swap",
 });
 
