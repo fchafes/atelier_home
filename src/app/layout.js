@@ -3,13 +3,18 @@ import "./globals.css";
 import "app/sass/globals.sass";
 import localFont from "next/font/local";
 
-const LibreCaslon = Libre_Caslon_Text({
-  subsets: ["latin"],
-  weight: "400",
-});
+// const LibreCaslon = Libre_Caslon_Text({
+//   subsets: ["latin"],
+//   weight: "400",
+// });
 
 const GoodSans = localFont({
-  src: "../../public/fonts/good-sans-regular.ttf",
+  src: "../../public/fonts/Good-Sans-Regular.ttf",
+  display: "swap",
+});
+
+const LibreCaslon = localFont({
+  src: "../../public/fonts/libre-caslon-text-italic.ttf",
   display: "swap",
 });
 
