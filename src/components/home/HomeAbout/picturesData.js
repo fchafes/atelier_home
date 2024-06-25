@@ -16,8 +16,8 @@ const picturesData = [
   },
   {
     id: "about-4",
-    urlSmall: "/images/home/about_4_small.webp",
-    urlLarge: "/images/home/about_4_large.webp",
+    urlSmall: "/images/home/about-4-small.webp",
+    urlLarge: "/images/home/about-4-large.webp",
   },
   {
     id: "about-5",
@@ -26,13 +26,13 @@ const picturesData = [
   },
   {
     id: "about-6",
-    urlSmall: "/images/home/about_6_small.webp",
-    urlLarge: "/images/home/about_6_large.webp",
+    urlSmall: "/images/home/about-6-small.webp",
+    urlLarge: "/images/home/about-6-large.webp",
   },
   {
     id: "about-7",
-    urlSmall: "/images/home/about_7_small.webp",
-    urlLarge: "/images/home/about_7_large.webp",
+    urlSmall: "/images/home/about-7-small.webp",
+    urlLarge: "/images/home/about-7-large.webp",
   },
 ];
 
