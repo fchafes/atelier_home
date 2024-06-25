@@ -16,9 +16,6 @@ const GoodSans = localFont({
 export const metadata = {
   title: "Atelier",
   description: "Panadería Artesanal",
-  icons: {
-    icon: "/favicon.jpg",
-  },
 };
 
 export default function RootLayout({ children }) {
