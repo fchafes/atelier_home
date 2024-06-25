@@ -7,13 +7,18 @@ import Logo from "app/components/shared/svg/Logo.svg";
 import { MobileMenu } from "app/components/shared/MobileMenu";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [linkColor, setLinkColor] = useState("#FFF"); // Color inicial de los enlaces
+  const router = useRouter();
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
+  };
+  const handleNavigation = () => {
+    router.push("https://tienda.atelier.com.uy/");
   };
 
   useEffect(() => {
@@ -71,7 +76,11 @@ export const Header = () => {
       <div className={styles.burgerBox} onClick={toggleMenu}>
         <Burger style={{ color: linkColor }} />
       </div>
-      <EmptyCart className={styles.EmptyCart} style={{ color: linkColor }} />
+      <EmptyCart
+        className={styles.EmptyCart}
+        style={{ color: linkColor }}
+        onClick={handleNavigation}
+      />
       <Link href="/" className={styles.logoLink}>
         <Logo style={{ color: linkColor }} />
       </Link>
