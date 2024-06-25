@@ -8,6 +8,7 @@ import { Header } from "app/components/shared/Header";
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Header/>
       <HomeBackground/>
       <HomeIntro />
       <HomeAbout />

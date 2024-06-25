@@ -1,7 +1,6 @@
 import { Libre_Caslon_Text } from "next/font/google";
 import "./globals.css";
 import "app/sass/globals.sass";
-import { Header } from "app/components/shared/Header";
 import localFont from "next/font/local";
 
 const LibreCaslon = Libre_Caslon_Text({
@@ -23,7 +22,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${LibreCaslon.className} ${GoodSans.className}`}>
-        <Header />
         {children}
       </body>
     </html>

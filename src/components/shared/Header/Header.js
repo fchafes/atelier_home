@@ -46,23 +46,25 @@ export const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="/tienda" style={{ color: linkColor }}>
+            <Link
+              href="https://tienda.atelier.com.uy/"
+              style={{ color: linkColor }}
+            >
               TIENDA
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://tienda.atelier.com.uy/cart"
+              style={{ color: linkColor }}
+            >
+              CARRITO
             </Link>
           </li>
           <li>
             <Link href="/contacto" style={{ color: linkColor }}>
               CONTACTO
             </Link>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/ateliercasadepan"
-              target="_blank"
-              style={{ color: linkColor }}
-            >
-              INSTAGRAM
-            </a>
           </li>
         </ul>
       </nav>
