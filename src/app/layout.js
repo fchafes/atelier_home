@@ -8,15 +8,15 @@ import localFont from "next/font/local";
 //   weight: "400",
 // });
 
-const GoodSans = localFont({
-  src: "../../public/fonts/Good-Sans-Regular.ttf",
-  display: "swap",
-});
+// const GoodSans = localFont({
+//   src: "../../public/fonts/Good-Sans-Regular.ttf",
+//   display: "swap",
+// });
 
-const LibreCaslon = localFont({
-  src: "../../public/fonts/libre-caslon-text-italic.ttf",
-  display: "swap",
-});
+// const LibreCaslon = localFont({
+//   src: "../../public/fonts/libre-caslon-text-italic.ttf",
+//   display: "swap",
+// });
 
 export const metadata = {
   title: "Atelier",
@@ -26,9 +26,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${LibreCaslon.className} ${GoodSans.className}`}>
-        {children}
-      </body>
+      {/* <body className={`${GoodSans.className} ${LibreCaslon.className}`}> */}
+      <body>{children}</body>
     </html>
   );
 }
