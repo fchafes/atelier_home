@@ -4,6 +4,11 @@ import { ContactHeader } from "app/components/shared/ContactHeader";
 import { Footer } from "app/components/shared/Footer";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Atelier Contacto",
+  description: "Panadería Artesanal",
+};
+
 export default function Contacto() {
   return (
     <>
@@ -42,11 +47,10 @@ export default function Contacto() {
                 </a>
               </p>
               <p>
-                <br />Horario de atención: Lunes a Sábados de 9.00 a 19.00h
+                <br />
+                Horario de atención: Lunes a Sábados de 9.00 a 19.00h
               </p>
-              <p>
-                Chaná 2004 esq Juan D. Jackson
-              </p>
+              <p>Chaná 2004 esq Juan D. Jackson</p>
             </article>
             <article>
               <div className={styles.imgBox}>
