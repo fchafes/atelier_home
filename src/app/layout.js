@@ -1,22 +1,6 @@
-import { Libre_Caslon_Text } from "next/font/google";
 import "./globals.css";
 import "app/sass/globals.sass";
-import localFont from "next/font/local";
-
-// const LibreCaslon = Libre_Caslon_Text({
-//   subsets: ["latin"],
-//   weight: "400",
-// });
-
-// const GoodSans = localFont({
-//   src: "../../public/fonts/Good-Sans-Regular.ttf",
-//   display: "swap",
-// });
-
-// const LibreCaslon = localFont({
-//   src: "../../public/fonts/libre-caslon-text-italic.ttf",
-//   display: "swap",
-// });
+import Head from "next/head";
 
 export const metadata = {
   title: "Atelier",
@@ -26,7 +10,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <body className={`${GoodSans.className} ${LibreCaslon.className}`}> */}
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <body>{children}</body>
     </html>
   );
