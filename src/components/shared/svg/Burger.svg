@@ -1,3 +1,6 @@
-<svg width="21" height="14" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
+<!-- <svg width="21" height="14" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 12V10H18V12H0ZM0 7V5H18V7H0ZM0 2V0H18V2H0Z" fill="currentColor"/>
+</svg> -->
+<svg width="21" height="14" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 11.5V10.5H18V11.5H0ZM0 6.5V5.5H18V6.5H0ZM0 1.5V0.5H18V1.5H0Z" fill="currentColor"/>
 </svg>
