@@ -10,7 +10,8 @@
 
 .contacto_main h2 {
   font-size: 1.2em;
-  font-family: "LibreCaslon", serif;
+  font-family: "Libre Caslon Text", serif;
+  font-style: italic;
   margin-bottom: 0.5em;
 }
 
@@ -76,5 +77,14 @@
   .contacto_section article:last-child {
     display: flex;
     justify-content: end;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    /* Estilos específicos para Safari */
+    .contacto_main h1 {
+      font-weight: 100;
+    }
   }
 }

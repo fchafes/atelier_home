@@ -53,3 +53,12 @@
     font-size: 0.8em;
   }
 }
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    /* Estilos específicos para Safari */
+    h1 {
+      font-weight: 100;
+    }
+  }
+}

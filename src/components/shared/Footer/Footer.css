@@ -38,3 +38,12 @@ footer .footer-nav li a {
 footer .footer-nav li:last-child {
   margin-right: 0;
 }
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    /* Estilos específicos para Safari */
+    h3 {
+      font-weight: 100;
+    }
+  }
+}
