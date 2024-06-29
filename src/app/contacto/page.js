@@ -40,17 +40,20 @@ export default function Contacto() {
                   </a>
                 </p>
               </div>
+              <div className={styles.textBox}>
+                <h2>→ Horario de atención</h2>
+                <p>
+                  Lunes a Sábados de 9.00 a 19.00h
+                  <br />
+                  Chaná 2004 esq Juan D. Jackson
+                </p>
+              </div>
               <p>
                 Por consultas generales contactarse a:{" "}
                 <a href="mailto:ateliercasadepan@gmail.com">
                   ateliercasadepan@gmail.com
                 </a>
               </p>
-              <p>
-                <br />
-                Horario de atención: Lunes a Sábados de 9.00 a 19.00h
-              </p>
-              <p>Chaná 2004 esq Juan D. Jackson</p>
             </article>
             <article>
               <div className={styles.imgBox}>
