@@ -42,7 +42,7 @@ export const TextBox = ({ id, speed }) => {
         <>
           <p>
             Atelier es un taller, un espacio de creación para todos los que
-            forman parte su equipo.
+            forman parte de su equipo.
             <br />
             <br />
             Estamos en constante búsqueda, inquietos a la hora de entender y
